@@ -1,0 +1,75 @@
+/* Estilos gerais para o furmulário */
+
+/* Estilos para centralizar o formulário na página */
+body {
+    display: flex; /* Utiliza Flexbox para facilitar o alinhamento */
+    justify-content: center; /* Centraliza verticalmente o formulário */
+    align-items: center; /* Centraliza verticalmente o formulário */
+    height: 100vh; /* Define a altura da página com 100% da altura da janela */
+    background-color: #fff;
+    margin: 0; /* Remove margens padrão do corpo */
+    font-family:Arial, sans-serif /* Define a fonte padão */
+}
+
+/* Estilos do contêiner do formulário */
+.form-container {
+    background-color: #ccc; /* Fundo branco para o formulário */
+    padding: 20px; /* Espaçamento interno ao redor dos elementos */
+    border-radius: 10px; /* Arredonda os cantos do formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao redor do furmulário */
+    width: 300px; /* Define a largura fixa do formulário */
+}
+
+/* Estilo para o titulo do formulario */
+
+h2 {
+    text-align: center; /* Centraliza o texto do tituçlo */
+    margin-bottom: 20px; /* adiciona um espaço inferior */
+    font-size: 1.5em; /* aumenta o tamanho da fonte do titulo */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Estilos para os rótulos (label) */
+label {
+    display: block; /* Exive o rotulo em bloco para que ocupe toda a largura */
+    margin-bottom: 5px; /* Espacamento inferior entre o rotulo e o campo de inut*/
+    font-size: 0.9em; /* define um tamanho de fonte um pouco menor para os rotulos */
+    color: #333; /* Cor escura para os rótulos */
+}
+
+/* Estilos para os campos de input */
+input[type="text"], [type="email"], [type="password"]{
+    width: 100%; /* Faz o input ocupar 100% da largura do conteiner */
+    padding: 10px; /* Espaçamento inferior nos campos de input */
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* estilo para o botão de envio */
+
+button {
+    width: 100%; /* Faz o botão ocupar 100% da largura do conteiner */
+    padding: 10px; /* espaçamento interno do botão */
+    background-color: rgb(21, 25, 230);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: rgb(24, 0, 240);
+}
+
+
+#error-massage {
+    color: rgb(255, 0, 0);
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
